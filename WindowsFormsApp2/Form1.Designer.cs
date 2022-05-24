@@ -72,6 +72,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(108, 207);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(5);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(68, 21);
             this.radioButton1.TabIndex = 41;
@@ -104,6 +105,7 @@
             this.button2.TabIndex = 39;
             this.button2.Text = "Register";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -180,6 +182,7 @@
             this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 33;
             this.label1.Text = "Username";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 

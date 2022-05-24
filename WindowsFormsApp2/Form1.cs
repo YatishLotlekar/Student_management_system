@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\Login.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security=True;Connect Timeout=30");
 
         public Form1()
         {
@@ -52,7 +52,6 @@ namespace WindowsFormsApp2
                     da.Fill(dt);
                     if (dt.Rows.Count > 0)
                     {
-                        MessageBox.Show("yes");
                         Form2 x = new Form2();
                         x.Show();
                     }
@@ -71,6 +70,17 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show("Enter Username or Password");
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            RegisterForm x = new RegisterForm();
+            x.Show();
         }
     }
 }
