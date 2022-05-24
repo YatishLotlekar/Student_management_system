@@ -39,7 +39,7 @@ namespace WindowsFormsApp2
                     }
                     else if (radioButton3.Checked == true)
                     {
-                        cmd.CommandText = "Select username,password from Student where username ='" + textBox1.Text + "'and password ='" + textBox2.Text + "'";
+                        cmd.CommandText = "Select Enumber,Password from Register where Enumber ='" + textBox1.Text + "'and Password ='" + textBox2.Text + "'";
                     }
                     else
                     {

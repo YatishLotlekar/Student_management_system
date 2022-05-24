@@ -36,19 +36,26 @@ namespace WindowsFormsApp2
             {
                 if (textBox4.Text == textBox5.Text)
                 {
-                    try
+                    if (textBox4.TextLength < 4)
                     {
-                        con.Open();
-                        SqlCommand cmd = con.CreateCommand();
-                        cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "Insert into Register(Firstname,Lastname,Enumber,Password) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "')";
-                        cmd.ExecuteNonQuery();
-                        con.Close();
-                        MessageBox.Show("Data added successfully ");
+                        MessageBox.Show("Password Cannot be less than 4 character");
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show(ex.Message);
+                        try
+                        {
+                            con.Open();
+                            SqlCommand cmd = con.CreateCommand();
+                            cmd.CommandType = CommandType.Text;
+                            cmd.CommandText = "Insert into Register(Firstname,Lastname,Enumber,Password) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "')";
+                            cmd.ExecuteNonQuery();
+                            con.Close();
+                            MessageBox.Show("Data added successfully ");
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
                     }
                 }
                 else
