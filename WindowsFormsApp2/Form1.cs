@@ -82,5 +82,15 @@ namespace WindowsFormsApp2
             RegisterForm x = new RegisterForm();
             x.Show();
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Contact Your Administrator");
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
