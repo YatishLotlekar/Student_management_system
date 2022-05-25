@@ -52,7 +52,7 @@ namespace WindowsFormsApp2
                     da.Fill(dt);
                     if (dt.Rows.Count > 0)
                     {
-                        Form2 x = new Form2();
+                        Form3 x = new Form3();
                         x.Show();
                     }
                     else
