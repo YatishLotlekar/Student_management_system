@@ -69,5 +69,27 @@ namespace WindowsFormsApp2.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap training_teacher_sticker_icon_isolated_gray_background_training_teacher_sticker_icon_isolated_gray_background_simple_vector_187560978 {
+            get {
+                object obj = ResourceManager.GetObject("training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-i" +
+                        "con-isolated-gray-background-simple-vector-187560978", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap training_teacher_sticker_icon_isolated_gray_background_training_teacher_sticker_icon_isolated_gray_background_simple_vector_1875609781 {
+            get {
+                object obj = ResourceManager.GetObject("training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-i" +
+                        "con-isolated-gray-background-simple-vector-1875609781", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
