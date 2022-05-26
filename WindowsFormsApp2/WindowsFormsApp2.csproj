@@ -70,6 +70,12 @@
     <Compile Include="Studentmenu.Designer.cs">
       <DependentUpon>Studentmenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherForm.Designer.cs">
+      <DependentUpon>TeacherForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterForm.cs">
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Studentmenu.resx">
       <DependentUpon>Studentmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherForm.resx">
+      <DependentUpon>TeacherForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\admin-support-blue-rgb-color-icon-virtual-vector-39924229.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-187560978.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-1875609781.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

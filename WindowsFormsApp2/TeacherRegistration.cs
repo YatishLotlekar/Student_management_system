@@ -56,15 +56,15 @@ namespace WindowsFormsApp2
                                 cmd.ExecuteNonQuery();
                                 if (radioButton1.Checked == true)
                                 {
-                                    cmd.CommandText = "update Teacher set Gender = '"+ radioButton1.Text+"' Where username ='"+textBox4.Text+"'";
-                                    cmd.ExecuteNonQuery();
+
+                                    cmd.CommandText = "update Teacher set Gender = ('"+ radioButton1.Text+"') Where username =('"+textBox4.Text+"')";
+                                   
                                 }
                                 else if(radioButton2.Checked == true)
                                 {
-                                    cmd.CommandText = "update Teacher set Gender = '" + radioButton2.Text + "' Where username ='" + textBox4.Text + "'";
-                                    cmd.ExecuteNonQuery();
+                                    cmd.CommandText = "update Teacher set Gender = ('" + radioButton2.Text + "') Where username =('" + textBox4.Text + "')";
                                 }
-                                
+                                cmd.ExecuteNonQuery();
                                 con.Close();
                                 MessageBox.Show("Data added successfully ");
                             }
