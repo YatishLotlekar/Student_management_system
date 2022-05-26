@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security=True;Connect Timeout=30");
 
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -32,34 +32,61 @@ namespace WindowsFormsApp2
                     if (radioButton1.Checked == true)
                     {
                         cmd.CommandText = "Select username,password from Admin where username ='" + textBox1.Text + "'and password ='" + textBox2.Text + "'";
+                        cmd.ExecuteNonQuery();
+                        DataTable dt = new DataTable();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(dt);
+                        if (dt.Rows.Count > 0)
+                        {
+                            Studentmenu x = new Studentmenu();
+                            x.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Username or Password");
+                        }
+                        con.Close();
                     }
                     else if (radioButton2.Checked == true)
                     {
                         cmd.CommandText = "Select username,password from Teacher where username ='" + textBox1.Text + "'and password ='" + textBox2.Text + "'";
+                        cmd.ExecuteNonQuery();
+                        DataTable dt = new DataTable();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(dt);
+                        if (dt.Rows.Count > 0)
+                        {
+                            Studentmenu x = new Studentmenu();
+                            x.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Username or Password");
+                        }
+                        con.Close();
                     }
                     else if (radioButton3.Checked == true)
                     {
                         cmd.CommandText = "Select Enumber,Password from Register where Enumber ='" + textBox1.Text + "'and Password ='" + textBox2.Text + "'";
+                        cmd.ExecuteNonQuery();
+                        DataTable dt = new DataTable();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(dt);
+                        if (dt.Rows.Count > 0)
+                        {
+                            Studentmenu x = new Studentmenu();
+                            x.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Username or Password");
+                        }
+                        con.Close();
                     }
                     else
                     {
                         MessageBox.Show("Select user");
                     }
-
-                    cmd.ExecuteNonQuery();
-                    DataTable dt = new DataTable();
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    da.Fill(dt);
-                    if (dt.Rows.Count > 0)
-                    {
-                        Form3 x = new Form3();
-                        x.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid Username or Password");
-                    }
-                    con.Close();
                 }
                 catch (Exception ex)
                 {
@@ -94,6 +121,11 @@ namespace WindowsFormsApp2
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
