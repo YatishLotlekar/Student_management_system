@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form3 : Form
+    public partial class Studentmenu : Form
     {
-        public Form3()
+        public Studentmenu()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
