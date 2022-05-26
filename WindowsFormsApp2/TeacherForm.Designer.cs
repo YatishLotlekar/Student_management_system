@@ -35,8 +35,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +102,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(155)))), ((int)(((byte)(104)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(271, 0);
             this.panel1.Name = "panel1";
@@ -116,6 +119,16 @@
             this.panel3.Size = new System.Drawing.Size(271, 117);
             this.panel3.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(257, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Teacher";
+            // 
             // TeacherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -128,6 +141,8 @@
             this.Text = "TeacherForm";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -141,5 +156,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }
