@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class Login : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Downloads\Login.mdf;Integrated Security=True;Connect Timeout=30");
 
         public Login()
         {
@@ -38,7 +38,8 @@ namespace WindowsFormsApp2
                         da.Fill(dt);
                         if (dt.Rows.Count > 0)
                         {
-                            Studentmenu x = new Studentmenu();
+                            this.Hide();
+                            AdminForm x = new AdminForm();
                             x.Show();
                         }
                         else
@@ -56,6 +57,7 @@ namespace WindowsFormsApp2
                         da.Fill(dt);
                         if (dt.Rows.Count > 0)
                         {
+                            this.Hide();
                             Studentmenu x = new Studentmenu();
                             x.Show();
                         }
@@ -67,13 +69,14 @@ namespace WindowsFormsApp2
                     }
                     else if (radioButton3.Checked == true)
                     {
-                        cmd.CommandText = "Select Enumber,Password from Register where Enumber ='" + textBox1.Text + "'and Password ='" + textBox2.Text + "'";
+                        cmd.CommandText = "Select Enumber,Password from Register where Firstname ='" + textBox1.Text + "'and Password ='" + textBox2.Text + "'";
                         cmd.ExecuteNonQuery();
                         DataTable dt = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
                         da.Fill(dt);
                         if (dt.Rows.Count > 0)
                         {
+                            this.Hide();
                             Studentmenu x = new Studentmenu();
                             x.Show();
                         }
@@ -106,6 +109,7 @@ namespace WindowsFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RegisterForm x = new RegisterForm();
             x.Show();
         }
