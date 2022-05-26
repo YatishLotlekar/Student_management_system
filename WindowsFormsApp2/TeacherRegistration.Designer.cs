@@ -268,6 +268,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
+            this.MaximizeBox = false;
             this.Name = "TeacherRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherRegistration";
