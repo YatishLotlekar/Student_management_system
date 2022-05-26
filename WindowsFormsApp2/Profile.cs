@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class Studentmenu : Form
+    public partial class Profile : Form
     {
-        public Studentmenu()
+        public Profile()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace WindowsFormsApp2
 
         }
 
-        private void panelTitlebar_Paint(object sender, PaintEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
 
         }
