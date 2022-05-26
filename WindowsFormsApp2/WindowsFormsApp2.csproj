@@ -140,5 +140,14 @@
   <ItemGroup>
     <None Include="Resources\training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-1875609781.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-editing-font-awesome-video-editing-register-icon-angle-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-status-rubber-stamp-vector-14931542.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-support-blue-rgb-color-icon-virtual-vector-399242291.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

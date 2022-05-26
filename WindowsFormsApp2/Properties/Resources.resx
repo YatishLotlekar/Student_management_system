@@ -121,10 +121,19 @@
   <data name="admin-support-blue-rgb-color-icon-virtual-vector-39924229" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\admin-support-blue-rgb-color-icon-virtual-vector-39924229.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-1875609781" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-1875609781.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payment-status-rubber-stamp-vector-14931542" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\payment-status-rubber-stamp-vector-14931542.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-187560978" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-187560978.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-1875609781" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-icon-isolated-gray-background-simple-vector-1875609781.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="png-clipart-computer-icons-editing-font-awesome-video-editing-register-icon-angle-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-clipart-computer-icons-editing-font-awesome-video-editing-register-icon-angle-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admin-support-blue-rgb-color-icon-virtual-vector-399242291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin-support-blue-rgb-color-icon-virtual-vector-399242291.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

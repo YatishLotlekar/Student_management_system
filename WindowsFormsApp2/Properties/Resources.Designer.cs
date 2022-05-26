@@ -73,6 +73,37 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap admin_support_blue_rgb_color_icon_virtual_vector_399242291 {
+            get {
+                object obj = ResourceManager.GetObject("admin-support-blue-rgb-color-icon-virtual-vector-399242291", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap payment_status_rubber_stamp_vector_14931542 {
+            get {
+                object obj = ResourceManager.GetObject("payment-status-rubber-stamp-vector-14931542", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_editing_font_awesome_video_editing_register_icon_angle_text {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-editing-font-awesome-video-editing-register-icon-angle" +
+                        "-text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap training_teacher_sticker_icon_isolated_gray_background_training_teacher_sticker_icon_isolated_gray_background_simple_vector_187560978 {
             get {
                 object obj = ResourceManager.GetObject("training-teacher-sticker-icon-isolated-gray-background-training-teacher-sticker-i" +
