@@ -27,5 +27,20 @@ namespace WindowsFormsApp2
             TeacherRegistration x = new TeacherRegistration();
             x.Show();
         }
+
+        private void AdminForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

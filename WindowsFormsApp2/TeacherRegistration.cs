@@ -29,7 +29,21 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if ((!String.IsNullOrEmpty(textBox1.Text)) && (!String.IsNullOrEmpty(textBox2.Text)) && (!String.IsNullOrEmpty(textBox3.Text)) && (!String.IsNullOrEmpty(textBox4.Text)) && (!String.IsNullOrEmpty(textBox5.Text)) && (!String.IsNullOrEmpty(textBox6.Text)))
+            {
+                if (textBox5.Text == textBox6.Text)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Fill all the details");
+            }
         }
 
         private void TeacherRegistration_Load(object sender, EventArgs e)
@@ -37,7 +51,12 @@ namespace WindowsFormsApp2
 
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
