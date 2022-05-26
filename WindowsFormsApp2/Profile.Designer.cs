@@ -97,7 +97,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.student_png_sammilani_mahavidyalaya_undergraduate_and_24;
+            //this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.student_png_sammilani_mahavidyalaya_undergraduate_and_24;
             this.pictureBox2.Location = new System.Drawing.Point(31, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 58);

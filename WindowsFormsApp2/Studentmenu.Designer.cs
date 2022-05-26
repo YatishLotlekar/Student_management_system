@@ -70,7 +70,7 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(213, 413);
             this.panelMenu.TabIndex = 2;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            //this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // button4
             // 
@@ -87,7 +87,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Calender";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            //this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox4
             // 
@@ -180,7 +180,7 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(213, 86);
             this.panelLogo.TabIndex = 1;
-            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
+            //this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
             // pictureBox2
             // 
@@ -205,7 +205,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(699, 86);
             this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            //this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -233,7 +233,7 @@
             this.button5.TabIndex = 8;
             this.button5.Text = "Log out";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            //this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // monthCalendar1
             // 
@@ -253,7 +253,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Studentmenu";
             this.Text = "Studentmenu";
-            this.Load += new System.EventHandler(this.Studentmenu_Load);
+            //this.Load += new System.EventHandler(this.Studentmenu_Load);
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
