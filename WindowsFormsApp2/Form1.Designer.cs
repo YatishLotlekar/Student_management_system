@@ -148,7 +148,7 @@
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(395, 88);
+            this.textBox2.Location = new System.Drawing.Point(395, 77);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
@@ -225,7 +225,7 @@
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(493, 227);
+            this.panel2.Location = new System.Drawing.Point(109, 27);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(663, 371);
             this.panel2.TabIndex = 45;
@@ -256,7 +256,7 @@
             this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1248, 669);
+            this.ClientSize = new System.Drawing.Size(877, 431);
             this.Controls.Add(this.panel2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

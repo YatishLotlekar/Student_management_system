@@ -32,21 +32,22 @@ namespace WindowsFormsApp2
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -75,15 +76,6 @@ namespace WindowsFormsApp2
             this.label3.Size = new System.Drawing.Size(108, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Enter education";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(211, 208);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Enter ID";
             // 
             // label5
             // 
@@ -124,13 +116,6 @@ namespace WindowsFormsApp2
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(142, 22);
             this.textBox3.TabIndex = 8;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(382, 205);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(142, 22);
-            this.textBox4.TabIndex = 9;
             // 
             // textBox5
             // 
@@ -177,14 +162,6 @@ namespace WindowsFormsApp2
             this.label7.Text = "Teacher Registration";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel2.Location = new System.Drawing.Point(140, 98);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(481, 285);
-            this.panel2.TabIndex = 14;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
@@ -192,6 +169,39 @@ namespace WindowsFormsApp2
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(535, 334);
             this.panel3.TabIndex = 15;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel2.Controls.Add(this.radioButton2);
+            this.panel2.Controls.Add(this.radioButton1);
+            this.panel2.Location = new System.Drawing.Point(140, 98);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(481, 285);
+            this.panel2.TabIndex = 14;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(99, 108);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(59, 21);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(242, 108);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(75, 21);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Female";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // TeacherRegistration
             // 
@@ -203,13 +213,11 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -220,6 +228,8 @@ namespace WindowsFormsApp2
             this.Text = "TeacherRegistration";
             this.Load += new System.EventHandler(this.TeacherRegistration_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,19 +240,19 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
