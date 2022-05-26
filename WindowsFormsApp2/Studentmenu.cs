@@ -22,9 +22,40 @@ namespace WindowsFormsApp2
 
         }
 
-        private void panelTitlebar_Paint(object sender, PaintEventArgs e)
+        private void Studentmenu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login x = new Login();
+            x.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            monthCalendar1.Visible = true;
         }
     }
 }
