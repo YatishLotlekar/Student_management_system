@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Studentmenu));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -70,7 +70,22 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(213, 413);
             this.panelMenu.TabIndex = 2;
-            //this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(0, 364);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(213, 49);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "Log out";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -87,7 +102,6 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Calender";
             this.button4.UseVisualStyleBackColor = true;
-            //this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox4
             // 
@@ -169,6 +183,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Profile";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelLogo
             // 
@@ -180,7 +195,6 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(213, 86);
             this.panelLogo.TabIndex = 1;
-            //this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
             // pictureBox2
             // 
@@ -205,7 +219,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(699, 86);
             this.panel1.TabIndex = 3;
-            //this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -217,23 +230,6 @@
             this.label1.Size = new System.Drawing.Size(140, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "HOME";
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 364);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(213, 49);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Log out";
-            this.button5.UseVisualStyleBackColor = true;
-            //this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // monthCalendar1
             // 
@@ -253,7 +249,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Studentmenu";
             this.Text = "Studentmenu";
-            //this.Load += new System.EventHandler(this.Studentmenu_Load);
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -14,7 +14,7 @@ namespace WindowsFormsApp2
     public partial class Login : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Downloads\Login.mdf;Integrated Security=True;Connect Timeout=30");
-
+        public static string setvaluefortext1 = "";
         public Login()
         {
             InitializeComponent();
@@ -69,7 +69,7 @@ namespace WindowsFormsApp2
                     }
                     else if (radioButton3.Checked == true)
                     {
-                        cmd.CommandText = "Select Enumber,Password from Register where Firstname ='" + textBox1.Text + "'and Password ='" + textBox2.Text + "'";
+                        cmd.CommandText = "Select Firstname,Password from Register where Firstname ='" + textBox1.Text + "'and Password ='" + textBox2.Text + "'";
                         cmd.ExecuteNonQuery();
                         DataTable dt = new DataTable();
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -100,6 +100,7 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show("Enter Username or Password");
             }
+            setvaluefortext1 = textBox1.Text;
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -91,7 +91,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.training_teacher_sticker_icon_isolated_gray_background_training_teacher_sticker_icon_isolated_gray_background_simple_vector_1875609781;
+            //this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.training_teacher_sticker_icon_isolated_gray_background_training_teacher_sticker_icon_isolated_gray_background_simple_vector_1875609781;
             this.pictureBox1.Location = new System.Drawing.Point(44, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 117);
