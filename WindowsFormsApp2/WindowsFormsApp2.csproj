@@ -200,6 +200,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Login.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\images %281%29.png" />
+    <None Include="Resources\download %281%29.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\admin-support-blue-rgb-color-icon-virtual-vector-399242292.jpg" />
     <None Include="Resources\student-png-sammilani-mahavidyalaya-undergraduate-and-241.png" />
   </ItemGroup>
   <ItemGroup>

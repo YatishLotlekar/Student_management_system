@@ -93,7 +93,7 @@ namespace WindowsFormsApp2
             // 
             // pictureBox3
             // 
-            //this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.admin_support_blue_rgb_color_icon_virtual_vector_399242291;
+            this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.admin_support_blue_rgb_color_icon_virtual_vector_399242292;
             this.pictureBox3.Location = new System.Drawing.Point(52, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(83, 78);
