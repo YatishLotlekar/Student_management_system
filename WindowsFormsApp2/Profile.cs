@@ -26,13 +26,14 @@ namespace WindowsFormsApp2
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "Select * from Register where Firstname ='" + Login.setvaluefortext1 + "'";
+                cmd.CommandText = "Select * from Register where Firstname ='" + Login.nametext1 + "'";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
-                dataGridView1.DataSource = dt;
+                //dataGridView1.DataSource = dt;
                 //label6.Text = Login.setvaluefortext1;
+                
                 con.Close();
             }
             catch (Exception ex)
@@ -62,12 +63,22 @@ namespace WindowsFormsApp2
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "Select * from Register where Firstname ='" + Login.setvaluefortext1 +"'";
+                cmd.CommandText = "Select * from Register where Firstname ='" + Login.nametext1 +"'";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
-                label6.Text = Login.setvaluefortext1;
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                label6.Text = reader["Firstname"].ToString();
+
+                reader.Read();
+                label7.Text = reader["Lastname"].ToString();
+
+                /*reader.Read();
+                //Convert.ToInt32(label9.Text);
+                label9.Text = reader["Enumber"].ToString();*/
+                reader.Close();
                 con.Close();
             }
             catch (Exception ex)
@@ -75,6 +86,11 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
             display();
-        }       
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

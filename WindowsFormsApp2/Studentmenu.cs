@@ -28,5 +28,16 @@ namespace WindowsFormsApp2
             Profile x = new Profile();
             x.Show();
         }
+
+        private void Studentmenu_Load(object sender, EventArgs e)
+        {
+            //Login.nametext1 = label2.Text;
+            label2.Text = Login.nametext1;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

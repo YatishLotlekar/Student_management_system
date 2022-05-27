@@ -90,6 +90,12 @@
     <Compile Include="Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchStudent.Designer.cs">
+      <DependentUpon>SearchStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Studentmenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,12 @@
     <Compile Include="TeacherRegistration.Designer.cs">
       <DependentUpon>TeacherRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateGrade.Designer.cs">
+      <DependentUpon>UpdateGrade.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchStudent.resx">
+      <DependentUpon>SearchStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Studentmenu.resx">
       <DependentUpon>Studentmenu.cs</DependentUpon>
@@ -146,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherRegistration.resx">
       <DependentUpon>TeacherRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateGrade.resx">
+      <DependentUpon>UpdateGrade.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="LoginDataSet.xsc">
       <DependentUpon>LoginDataSet.xsd</DependentUpon>
