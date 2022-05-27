@@ -73,5 +73,10 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
