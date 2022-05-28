@@ -77,7 +77,7 @@ namespace WindowsFormsApp2
 
                 /*reader.Read();
                 //Convert.ToInt32(label9.Text);
-                label9.Text = reader["Enumber"].ToString();*/
+                label8.Text = reader["Lastname"].ToString();*/
                 reader.Close();
                 con.Close();
             }
@@ -86,6 +86,33 @@ namespace WindowsFormsApp2
                 MessageBox.Show(ex.Message);
             }
             display();
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * from Register where Firstname ='" + Login.nametext1 + "'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                label8.Text = reader["Enumber"].ToString();
+
+                reader.Read();
+                label9.Text = reader["Password"].ToString();
+
+                /*reader.Read();
+                //Convert.ToInt32(label9.Text);
+                label8.Text = reader["Lastname"].ToString();*/
+                reader.Close();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
