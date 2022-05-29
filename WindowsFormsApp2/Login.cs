@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class Login : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Source\Repos\Student_management_system\WindowsFormsApp2\Login.mdf;Integrated Security=True;Connect Timeout=30");
         public static string nametext1 = "";
         public Login()
         {
@@ -56,6 +56,7 @@ namespace WindowsFormsApp2
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dt);
                     con.Close();
+                    nametext1 = textBox1.Text;
                     if (dt.Rows.Count > 0)
                     {
                         if (fno == 1)
@@ -67,7 +68,7 @@ namespace WindowsFormsApp2
                         else if (fno == 2)
                         {
                             this.Hide();
-                            Studentmenu x = new Studentmenu();
+                            TeacherForm x = new TeacherForm();
                             x.Show();
                         }
                         else if (fno == 3)
@@ -91,7 +92,7 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show("Enter Username or Password");
             }
-            nametext1 = textBox1.Text;
+            
         }
 
         private void label1_Click(object sender, EventArgs e)

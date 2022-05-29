@@ -28,21 +28,17 @@ namespace WindowsFormsApp2
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "Select * from Teacher where Tname ='" + Login.nametext1 + "'";
+                cmd.CommandText = "Select * from Teacher where username ='" + Login.nametext1 + "'";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
                 SqlDataReader reader = cmd.ExecuteReader();
                 reader.Read();
-                label8.Text = reader["Firstname"].ToString();
-
-                reader.Read();
-                label7.Text = reader["Lastname"].ToString();
-
-                reader.Read();
-                //Convert.ToInt32(label9.Text);
-                label6.Text = reader["Lastname"].ToString();
+                label5.Text = reader["Tname"].ToString();
+                label6.Text = reader["EmailID"].ToString();
+                //label7.Text = reader["Education"].ToString();
+                //label8.Text = reader["Gender"].ToString();
                 reader.Close();
                 con.Close();
             }

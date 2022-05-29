@@ -35,7 +35,18 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            TeacherProfile x = new TeacherProfile();
+            x.Show();
+        }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TeacherForm_Load(object sender, EventArgs e)
+        {
+            label2.Text = Login.nametext1;
         }
     }
 }
