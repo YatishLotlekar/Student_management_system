@@ -42,7 +42,7 @@ namespace WindowsFormsApp2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 124);
+            this.button1.Location = new System.Drawing.Point(175, 123);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(149, 39);
             this.button1.TabIndex = 17;
@@ -60,9 +60,9 @@ namespace WindowsFormsApp2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 196);
+            this.button2.Location = new System.Drawing.Point(175, 195);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 39);
+            this.button2.Size = new System.Drawing.Size(149, 39);
             this.button2.TabIndex = 18;
             this.button2.Text = "Update Fees Status";
             this.button2.UseVisualStyleBackColor = true;
@@ -74,10 +74,9 @@ namespace WindowsFormsApp2
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Location = new System.Drawing.Point(208, 106);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 430);
+            this.panel4.Size = new System.Drawing.Size(506, 287);
             this.panel4.TabIndex = 24;
             // 
             // panel5
@@ -87,14 +86,14 @@ namespace WindowsFormsApp2
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 100);
+            this.panel5.Size = new System.Drawing.Size(506, 100);
             this.panel5.TabIndex = 25;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.admin_support_blue_rgb_color_icon_virtual_vector_399242292;
-            this.pictureBox3.Location = new System.Drawing.Point(52, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(210, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(83, 78);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,6 +108,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Name = "AdminForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
             this.Load += new System.EventHandler(this.AdminForm_Load);
             this.panel4.ResumeLayout(false);
