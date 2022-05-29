@@ -32,5 +32,10 @@ namespace WindowsFormsApp2
             SearchStudent x = new SearchStudent();
             x.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

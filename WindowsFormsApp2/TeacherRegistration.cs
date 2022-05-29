@@ -23,12 +23,10 @@ namespace WindowsFormsApp2
         {
 
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
            
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if ((!String.IsNullOrEmpty(textBox1.Text)) && (!String.IsNullOrEmpty(textBox2.Text)) && (!String.IsNullOrEmpty(textBox3.Text)) && (!String.IsNullOrEmpty(textBox4.Text)) && (!String.IsNullOrEmpty(textBox5.Text)) && (!String.IsNullOrEmpty(textBox6.Text)) && (radioButton1.Checked == true ) ||((radioButton2.Checked == true)))
@@ -47,33 +45,41 @@ namespace WindowsFormsApp2
                         }
                         else
                         {
-                            try
+                            if (radioButton1.Checked == true)
                             {
-                                con.Open();
-                                SqlCommand cmd = con.CreateCommand();
-                                cmd.CommandType = CommandType.Text;
-                                cmd.CommandText = "Insert into Teacher(Tname,EmailID,Education,username,password) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')";
-                                cmd.ExecuteNonQuery();
-                                if (radioButton1.Checked == true)
+                                try
                                 {
-
-                                    cmd.CommandText = "update Teacher set Gender = ('"+ radioButton1.Text+"') Where username =('"+textBox4.Text+"')";
-                                   
+                                    con.Open();
+                                    SqlCommand cmd = con.CreateCommand();
+                                    cmd.CommandType = CommandType.Text;
+                                    cmd.CommandText = "Insert into Teacher(Tname,EmailID,Education,Gender,username,password) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + radioButton1.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')";
+                                    cmd.ExecuteNonQuery();
+                                    con.Close();
+                                    MessageBox.Show("Data added successfully ");
                                 }
-                                else if(radioButton2.Checked == true)
+                                catch (Exception ex)
                                 {
-                                    cmd.CommandText = "update Teacher set Gender = ('" + radioButton2.Text + "') Where username =('" + textBox4.Text + "')";
+                                    MessageBox.Show(ex.Message);
                                 }
-                                cmd.ExecuteNonQuery();
-                                con.Close();
-                                MessageBox.Show("Data added successfully ");
                             }
-                            catch (Exception ex)
+                            else if (radioButton2.Checked == true)
                             {
-                                MessageBox.Show(ex.Message);
+                                try
+                                {
+                                    con.Open();
+                                    SqlCommand cmd = con.CreateCommand();
+                                    cmd.CommandType = CommandType.Text;
+                                    cmd.CommandText = "Insert into Teacher(Tname,EmailID,Education,Gender,username,password) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + radioButton2.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')";
+                                    cmd.ExecuteNonQuery();
+                                    con.Close();
+                                    MessageBox.Show("Data added successfully ");
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show(ex.Message);
+                                }
                             }
                         }
-                        
                     }
                 }
                 else
