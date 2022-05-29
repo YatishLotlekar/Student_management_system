@@ -63,6 +63,26 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _146_1466755_nearby_transparent_background_address_icon_hd_png_download {
+            get {
+                object obj = ResourceManager.GetObject("146-1466755_nearby-transparent-background-address-icon-hd-png-download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ad3b213bc790807c25d8bb774dab3c35 {
+            get {
+                object obj = ResourceManager.GetObject("ad3b213bc790807c25d8bb774dab3c35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap admin_support_blue_rgb_color_icon_virtual_vector_39924229 {
             get {
                 object obj = ResourceManager.GetObject("admin-support-blue-rgb-color-icon-virtual-vector-39924229", resourceCulture);
@@ -116,6 +136,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap download__2_ {
             get {
                 object obj = ResourceManager.GetObject("download (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download__3_ {
+            get {
+                object obj = ResourceManager.GetObject("download (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
