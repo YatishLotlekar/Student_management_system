@@ -14,7 +14,7 @@ namespace WindowsFormsApp2
 {
     public partial class TeacherRegistration : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Source\Repos\Student_management_system\WindowsFormsApp2\Login.mdf;Integrated Security=True;Connect Timeout=30");
         public TeacherRegistration()
         {
             InitializeComponent();
@@ -23,12 +23,10 @@ namespace WindowsFormsApp2
         {
 
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
            
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if ((!String.IsNullOrEmpty(textBox1.Text)) && (!String.IsNullOrEmpty(textBox2.Text)) && (!String.IsNullOrEmpty(textBox3.Text)) && (!String.IsNullOrEmpty(textBox4.Text)) && (!String.IsNullOrEmpty(textBox5.Text)) && (!String.IsNullOrEmpty(textBox6.Text)) && (radioButton1.Checked == true ) ||((radioButton2.Checked == true)))
@@ -52,17 +50,13 @@ namespace WindowsFormsApp2
                                 con.Open();
                                 SqlCommand cmd = con.CreateCommand();
                                 cmd.CommandType = CommandType.Text;
-                                cmd.CommandText = "Insert into Teacher(Tname,EmailID,Education,username,password) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')";
-                                cmd.ExecuteNonQuery();
                                 if (radioButton1.Checked == true)
                                 {
-
-                                    cmd.CommandText = "update Teacher set Gender = ('"+ radioButton1.Text+"') Where username =('"+textBox4.Text+"')";
-                                   
+                                    cmd.CommandText = "Insert into Teacher(Tname,EmailID,Education,Gender,username,password) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + radioButton1.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')";
                                 }
-                                else if(radioButton2.Checked == true)
+                                else if (radioButton2.Checked == true)
                                 {
-                                    cmd.CommandText = "update Teacher set Gender = ('" + radioButton2.Text + "') Where username =('" + textBox4.Text + "')";
+                                    cmd.CommandText = "Insert into Teacher(Tname,EmailID,Education,Gender,username,password) values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + radioButton1.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')";
                                 }
                                 cmd.ExecuteNonQuery();
                                 con.Close();
@@ -72,8 +66,8 @@ namespace WindowsFormsApp2
                             {
                                 MessageBox.Show(ex.Message);
                             }
+
                         }
-                        
                     }
                 }
                 else
