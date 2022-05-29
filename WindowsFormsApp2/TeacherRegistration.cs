@@ -14,7 +14,7 @@ namespace WindowsFormsApp2
 {
     public partial class TeacherRegistration : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Source\Repos\Student_management_system\WindowsFormsApp2\Login.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security = True; Connect Timeout = 30");
         public TeacherRegistration()
         {
             InitializeComponent();
@@ -94,6 +94,13 @@ namespace WindowsFormsApp2
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminForm x = new AdminForm();
+            x.Show();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class TeacherProfile : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Downloads\Login.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security = True; Connect Timeout = 30");
 
         public TeacherProfile()
         {
@@ -37,8 +37,8 @@ namespace WindowsFormsApp2
                 reader.Read();
                 label5.Text = reader["Tname"].ToString();
                 label6.Text = reader["EmailID"].ToString();
-                //label7.Text = reader["Education"].ToString();
-                //label8.Text = reader["Gender"].ToString();
+                label7.Text = reader["Education"].ToString();
+                label8.Text = reader["Gender"].ToString();
                 reader.Close();
                 con.Close();
             }
@@ -46,6 +46,13 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TeacherForm x = new TeacherForm();
+            x.Show();
         }
     }
 }

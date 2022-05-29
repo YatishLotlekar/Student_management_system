@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class SearchStudent : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Downloads\Login.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security = True; Connect Timeout = 30");
         public SearchStudent()
         {
             InitializeComponent();
@@ -48,7 +48,6 @@ namespace WindowsFormsApp2
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "Select * from Register where Firstname ='" + textBox1.Text + "'";
-
                     cmd.ExecuteNonQuery();
                     DataTable dt = new DataTable();
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -58,7 +57,7 @@ namespace WindowsFormsApp2
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("record not found");
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
@@ -66,6 +65,13 @@ namespace WindowsFormsApp2
         private void SearchStudent_Load(object sender, EventArgs e)
         {
             //display();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TeacherForm x = new TeacherForm();
+            x.Show();
         }
     }
 }

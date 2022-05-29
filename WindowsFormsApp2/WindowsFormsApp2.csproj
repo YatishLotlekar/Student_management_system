@@ -146,6 +146,12 @@
     <Compile Include="UpdateGrade.Designer.cs">
       <DependentUpon>UpdateGrade.cs</DependentUpon>
     </Compile>
+    <Compile Include="updateGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateGrades.Designer.cs">
+      <DependentUpon>updateGrades.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateGrade.resx">
       <DependentUpon>UpdateGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateGrades.resx">
+      <DependentUpon>updateGrades.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="LoginDataSet.xsc">
       <DependentUpon>LoginDataSet.xsd</DependentUpon>

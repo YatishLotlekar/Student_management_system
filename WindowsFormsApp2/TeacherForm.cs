@@ -29,12 +29,14 @@ namespace WindowsFormsApp2
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             SearchStudent x = new SearchStudent();
             x.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             TeacherProfile x = new TeacherProfile();
             x.Show();
         }
@@ -47,6 +49,20 @@ namespace WindowsFormsApp2
         private void TeacherForm_Load(object sender, EventArgs e)
         {
             label2.Text = Login.nametext1;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            updateGrades x = new updateGrades();
+            x.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login x = new Login();
+            x.Show();
         }
     }
 }
