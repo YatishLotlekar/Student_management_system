@@ -13,12 +13,13 @@ namespace WindowsFormsApp2
 {
     public partial class Login : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Downloads\Login.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\omkar morajkar\Documents\Login.mdf;Integrated Security=True;Connect Timeout=30");
         public static string nametext1 = "";
         public Login()
         {
             InitializeComponent();
         }
+        int fno;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -33,62 +34,52 @@ namespace WindowsFormsApp2
                     {
                         cmd.CommandText = "Select username,password from Admin where username ='" + textBox1.Text + "'and password ='" + textBox2.Text + "'";
                         cmd.ExecuteNonQuery();
-                        DataTable dt = new DataTable();
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        da.Fill(dt);
-                        if (dt.Rows.Count > 0)
-                        {
-                            this.Hide();
-                            AdminForm x = new AdminForm();
-                            x.Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid Username or Password");
-                        }
-                        con.Close();
+                        fno = 1;
                     }
                     else if (radioButton2.Checked == true)
                     {
                         cmd.CommandText = "Select username,password from Teacher where username ='" + textBox1.Text + "'and password ='" + textBox2.Text + "'";
                         cmd.ExecuteNonQuery();
-                        DataTable dt = new DataTable();
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        da.Fill(dt);
-                        if (dt.Rows.Count > 0)
-                        {
-                            this.Hide();
-                            Studentmenu x = new Studentmenu();
-                            x.Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid Username or Password");
-                        }
-                        con.Close();
+                        fno = 2;
                     }
                     else if (radioButton3.Checked == true)
                     {
                         cmd.CommandText = "Select Firstname,Password from Register where Firstname ='" + textBox1.Text + "'and Password ='" + textBox2.Text + "'";
                         cmd.ExecuteNonQuery();
-                        DataTable dt = new DataTable();
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        da.Fill(dt);
-                        if (dt.Rows.Count > 0)
+                        fno = 3;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Select user");
+                    }
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    con.Close();
+                    if (dt.Rows.Count > 0)
+                    {
+                        if (fno == 1)
+                        {
+                            this.Hide();
+                            AdminForm x = new AdminForm();
+                            x.Show();
+                        }
+                        else if (fno == 2)
                         {
                             this.Hide();
                             Studentmenu x = new Studentmenu();
                             x.Show();
                         }
-                        else
+                        else if (fno == 3)
                         {
-                            MessageBox.Show("Invalid Username or Password");
+                            this.Hide();
+                            Studentmenu x = new Studentmenu();
+                            x.Show();
                         }
-                        con.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Select user");
+                        MessageBox.Show("Invalid Username or Password");
                     }
                 }
                 catch (Exception ex)
