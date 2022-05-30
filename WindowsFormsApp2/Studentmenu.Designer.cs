@@ -263,6 +263,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Studentmenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Studentmenu";

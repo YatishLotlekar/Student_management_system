@@ -55,5 +55,10 @@ namespace WindowsFormsApp2
                 MessageBox.Show("Enter Username or Password");
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
