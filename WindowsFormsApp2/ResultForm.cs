@@ -28,5 +28,10 @@ namespace WindowsFormsApp2
             Studentmenu x = new Studentmenu();
             x.Show();
         }
+
+        private void label42_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,6 +35,7 @@ namespace WindowsFormsApp2
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -42,9 +43,9 @@ namespace WindowsFormsApp2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(175, 123);
+            this.button1.Location = new System.Drawing.Point(175, 115);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 39);
+            this.button1.Size = new System.Drawing.Size(149, 32);
             this.button1.TabIndex = 17;
             this.button1.Text = "Register Teacher";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,9 +61,9 @@ namespace WindowsFormsApp2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(175, 195);
+            this.button2.Location = new System.Drawing.Point(175, 153);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 39);
+            this.button2.Size = new System.Drawing.Size(149, 30);
             this.button2.TabIndex = 18;
             this.button2.Text = "Update Fees Status";
             this.button2.UseVisualStyleBackColor = true;
@@ -71,6 +72,7 @@ namespace WindowsFormsApp2
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Navy;
+            this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.panel5);
@@ -100,6 +102,16 @@ namespace WindowsFormsApp2
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(175, 234);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(149, 30);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "Log Out";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -107,6 +119,7 @@ namespace WindowsFormsApp2
             this.ClientSize = new System.Drawing.Size(912, 430);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
+            this.MinimizeBox = false;
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
@@ -125,5 +138,6 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button3;
     }
 }

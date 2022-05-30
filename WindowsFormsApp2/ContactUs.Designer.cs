@@ -36,15 +36,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -130,18 +136,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Location = new System.Drawing.Point(67, 273);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 128);
+            this.groupBox1.Size = new System.Drawing.Size(200, 151);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "DMC college";
             // 
             // label6
             // 
@@ -152,16 +149,37 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Assagao Goa";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 17);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "DMC college";
+            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Location = new System.Drawing.Point(324, 273);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 128);
+            this.groupBox2.Size = new System.Drawing.Size(200, 151);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 46);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 17);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "7391923408";
             // 
             // label7
             // 
@@ -180,46 +198,99 @@
             this.label8.Size = new System.Drawing.Size(0, 17);
             this.label8.TabIndex = 8;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 46);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 17);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "95112283816";
-            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.linkLabel5);
+            this.groupBox3.Controls.Add(this.linkLabel4);
+            this.groupBox3.Controls.Add(this.linkLabel3);
             this.groupBox3.Controls.Add(this.linkLabel2);
             this.groupBox3.Controls.Add(this.linkLabel1);
             this.groupBox3.Location = new System.Drawing.Point(566, 273);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(209, 128);
+            this.groupBox3.Size = new System.Drawing.Size(209, 151);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(6, 18);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(181, 17);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Yatishlotlikar12@gmail.com";
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(10, 56);
+            this.linkLabel2.Location = new System.Drawing.Point(6, 46);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(191, 17);
             this.linkLabel2.TabIndex = 11;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Sandipdhami237@gmail.com";
             // 
-            // Form1
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(6, 18);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(186, 17);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Yatishbatlikar12@gmail.com";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(8, 72);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 17);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "8766452383";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(8, 98);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(88, 17);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "7030723959";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(8, 124);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(88, 17);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "9284718044";
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(6, 72);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(183, 17);
+            this.linkLabel3.TabIndex = 12;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "pavanparwar11@gmail.com";
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Location = new System.Drawing.Point(6, 98);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(195, 17);
+            this.linkLabel4.TabIndex = 13;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "omkarmorajkar22@gmail.com";
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Location = new System.Drawing.Point(6, 124);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(166, 17);
+            this.linkLabel5.TabIndex = 12;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "jolanmiranda@gmail.com";
+            // 
+            // ContactUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -234,7 +305,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "ContactUs";
             this.Text = "Contact Us";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -269,5 +341,11 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.LinkLabel linkLabel5;
+        private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }

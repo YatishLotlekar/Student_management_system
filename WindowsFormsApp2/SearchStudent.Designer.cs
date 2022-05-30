@@ -108,6 +108,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Label2);
+            this.MaximizeBox = false;
             this.Name = "SearchStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SearchStudent";
