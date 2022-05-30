@@ -40,7 +40,7 @@ namespace WindowsFormsApp2
                     con.Open();
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "update Register set ME,DAST,SE,DC,CP = ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "') Where Enumber = ('" + textBox6.Text + "')";
+                    cmd.CommandText = "UPDATE Register SET ME = '"+textBox1.Text+ "', DAST = '" + textBox2.Text + "', SE = '" + textBox3.Text + "', DC = '" + textBox4.Text + "', CP = '" + textBox5.Text + "' Where Enumber='" + textBox6.Text + "' ";
                     cmd.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Data added successfully ");
