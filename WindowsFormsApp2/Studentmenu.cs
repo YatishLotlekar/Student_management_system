@@ -39,5 +39,19 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login x = new Login();
+            x.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ResultForm x = new ResultForm();
+            x.Show();
+        }
     }
 }
