@@ -43,7 +43,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -247,19 +247,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "HOME";
             // 
-            // monthCalendar1
+            // label3
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(384, 120);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 4;
-            this.monthCalendar1.Visible = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(427, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(234, 58);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Welcome";
             // 
             // Studentmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 413);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -277,6 +280,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -295,7 +299,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
